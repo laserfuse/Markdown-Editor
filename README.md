@@ -6,6 +6,8 @@
 [![CSS](https://img.shields.io/badge/CSS-663399?logo=css&logoColor=fff)](https://developer.mozilla.org/docs/Web/CSS)
 [![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=fff)](https://developer.mozilla.org/docs/Web/HTML)
 
+[Ouvrir Markdown Editor](https://laserfuse.github.io/Markdown-Editor/)
+
 Markdown Editor est une application web locale pour rédiger des fichiers Markdown et prévisualiser leur rendu en direct dans un style inspiré de GitHub. Le contenu est traité dans le navigateur : il n’est pas envoyé à un serveur.
 
 ## Fonctionnalités
@@ -65,6 +67,14 @@ Le serveur de développement se met à jour lorsque vous modifiez les fichiers d
 5. Consultez le **Guide Markdown** pour les syntaxes prises en charge ou la page **Badges** pour trouver et créer des badges.
 
 Les pages du guide, des badges et de la licence sont accessibles depuis la navigation de l’application.
+
+## Contributions
+
+Toute contribution est la bienvenue : corrections, nouvelles fonctionnalités, améliorations de la documentation ou signalement de problèmes. Vous pouvez ouvrir une *issue* pour partager une idée ou décrire un problème, ou proposer vos changements dans une *pull request*. Merci de contribuer au projet !
+
+## Utilisation de l’intelligence artificielle
+
+Des outils d’intelligence artificielle ont été utilisés pendant le développement de cet outil. Si cela vous freine dans son utilisation, j’en suis désolé et je comprends votre réserve.
 
 ## Vérifier le build de production
 
