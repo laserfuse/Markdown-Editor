@@ -148,11 +148,18 @@ kbd { padding: 2px 5px; border: 1px solid #e7e9ef; border-radius: 3px; backgroun
 
 .license-page { display: flex; flex-direction: column; }
 .license-main { width: min(940px, 91%); flex: 1; margin: 44px auto 28px; }
+.credits-page { display: flex; flex-direction: column; }
+.credits-main { width: min(940px, 91%); flex: 1; margin: 44px auto 28px; }
+.credits-page .site-footer { margin-top: 0; }
 .license-heading { margin-bottom: 20px; }
 .license-heading h1 { margin: 0 0 7px; font-size: 30px; letter-spacing: -.8px; }
 .license-heading > p:last-child { margin: 0; color: #788397; font-size: 14px; }
 .license-card { padding: clamp(24px, 5vw, 52px); border: 1px solid var(--border); border-radius: 10px; background: #fff; box-shadow: 0 8px 26px rgb(34 45 70 / 4%); }
 .license-content { color: #39445a; font-size: 14px; line-height: 1.8; overflow-wrap: anywhere; }
+.license-content h2 + .credits-profile { margin-top: -36px; }
+.credits-profile a { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); font-weight: 600; text-decoration: none; }
+.credits-profile a:hover { color: var(--accent); text-decoration: none; }
+.credits-profile img { width: 56px; height: 56px; border: 1px solid var(--border); border-radius: 50%; object-fit: cover; }
 .license-content h2 { margin: 0 0 18px; color: var(--ink); font-size: 19px; line-height: 1.4; }
 .license-content h3 { margin: 30px 0 10px; padding-bottom: 8px; border-bottom: 1px solid var(--border); color: var(--ink); font-size: 16px; line-height: 1.5; }
 .license-content p { margin: 0 0 16px; white-space: pre-line; }

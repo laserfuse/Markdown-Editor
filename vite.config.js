@@ -10,6 +10,7 @@ export default defineConfig(({ command }) => ({
         licence: fileURLToPath(new URL('./licence.html', import.meta.url)),
         guide: fileURLToPath(new URL('./guide.html', import.meta.url)),
         badges: fileURLToPath(new URL('./badges.html', import.meta.url)),
+        credits: fileURLToPath(new URL('./credits.html', import.meta.url)),
       },
     },
   },
