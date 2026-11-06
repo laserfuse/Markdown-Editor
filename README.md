@@ -8,9 +8,11 @@
 [![CSS](https://img.shields.io/badge/CSS-663399?logo=css&logoColor=fff)](https://developer.mozilla.org/docs/Web/CSS)
 [![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=fff)](https://developer.mozilla.org/docs/Web/HTML)
 
-[Ouvrir Markdown Editor](https://laserfuse.github.io/Markdown-Editor/)
+[Ouvrir Markdown Editor](https://markdown-editor.eu/)
 
 Markdown Editor est une application web locale pour rédiger des fichiers Markdown et prévisualiser leur rendu en direct dans un style inspiré de GitHub. Le contenu est traité dans le navigateur : il n’est pas envoyé à un serveur.
+
+Le site est publié sur [markdown-editor.eu](https://markdown-editor.eu/). Vite est configuré avec une base `/` afin que les pages et ressources fonctionnent à la racine du domaine personnalisé. Le workflow GitHub Actions construit le site et publie le dossier `dist/`.
 
 ## Contributions
 
@@ -33,40 +35,44 @@ Des outils d’intelligence artificielle ont été utilisés pendant le dévelop
 
 ## Prérequis
 
-- [Node.js](https://nodejs.org/) (npm est inclus).
+- [Node.js 20 ou une version ultérieure](https://nodejs.org/) (npm est inclus).
 - Un navigateur web récent.
 
 ## Installation et lancement en local
 
-1. Clonez le dépôt et ouvrez son dossier :
+1. Clonez le dépôt GitHub et placez-vous dans son dossier :
 
    ```bash
-   git clone <URL_DU_DEPOT>
+   git clone https://github.com/laserfuse/Markdown-Editor.git
    cd Markdown-Editor
    ```
 
-2. Installez les dépendances :
+2. Installez les dépendances du projet :
 
    ```bash
    npm install
    ```
 
-3. Lancez le serveur de développement :
+3. Démarrez le serveur de développement Vite :
 
    ```bash
    npm run dev
    ```
 
-4. Ouvrez dans votre navigateur l’adresse affichée dans le terminal, généralement `http://localhost:5173/`.
+4. Ouvrez dans votre navigateur l’adresse locale affichée dans le terminal, généralement <http://localhost:5173/>.
 
-Sous Windows, si PowerShell bloque la commande `npm`, utilisez `npm.cmd` :
+Le serveur recharge automatiquement le site lorsque vous modifiez les fichiers. Laissez le terminal ouvert pendant que vous utilisez le site, puis appuyez sur `Ctrl+C` pour arrêter le serveur.
+
+### Sous Windows
+
+Si PowerShell bloque la commande `npm`, utilisez `npm.cmd` :
 
 ```powershell
 npm.cmd install
 npm.cmd run dev
 ```
 
-Le serveur de développement se met à jour lorsque vous modifiez les fichiers du projet. Arrêtez-le avec `Ctrl+C` dans le terminal.
+Lancez les commandes l’une après l’autre dans le dossier du projet.
 
 ## Utilisation
 
@@ -78,9 +84,9 @@ Le serveur de développement se met à jour lorsque vous modifiez les fichiers d
 
 Les pages du guide, des badges et de la licence sont accessibles depuis la navigation de l’application.
 
-## Vérifier le build de production
+## Build de production
 
-Pour générer les fichiers compilés :
+Pour générer les fichiers prêts à être publiés dans le dossier `dist/` :
 
 ```bash
 npm run build
