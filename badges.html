@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Parcourez, personnalisez et copiez des badges Shields.io pour votre README Markdown."
+    />
+    <link rel="icon" type="image/png" href="./markdown-editor-logo.png" />
+    <title>Badges README · Markdown Editor</title>
+  </head>
+  <body class="badges-page">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Markdown Editor, accueil">
+        <img class="brand-logo" src="./site-logo.png" alt="" />
+      </a>
+      <a class="button guide-back" href="./">Retour à l’éditeur</a>
+    </header>
+
+    <main class="badges-main">
+      <div class="badges-heading">
+        <p class="eyebrow">PERSONNALISATION README</p>
+        <h1>Badges pour votre README</h1>
+        <p>Choisissez un badge courant ou créez le vôtre, prévisualisez-le et copiez son code Markdown.</p>
+      </div>
+
+      <section class="badge-builder" aria-labelledby="builder-title">
+        <div class="badge-section-heading">
+          <div>
+            <p class="eyebrow">GÉNÉRATEUR</p>
+            <h2 id="builder-title">Créer un badge personnalisé</h2>
+          </div>
+          <span class="badge-provider">Propulsé par Shields.io</span>
+        </div>
+        <p class="badge-editor-notice" id="badge-editor-notice" role="status" hidden></p>
+        <div class="badge-builder-grid">
+          <div class="badge-fields">
+            <label>
+              Texte à gauche
+              <input id="badge-label" type="text" value="Python" maxlength="40" />
+            </label>
+            <label>
+              Texte à droite
+              <input id="badge-message" type="text" value="3.12+" maxlength="60" />
+            </label>
+            <label>
+              Couleur (nom ou code hexadécimal)
+              <input id="badge-color" type="text" value="3776AB" maxlength="30" />
+            </label>
+            <label>
+              Style
+              <select id="badge-style">
+                <option value="flat">Flat</option>
+                <option value="flat-square">Flat square</option>
+                <option value="for-the-badge">For the badge</option>
+                <option value="plastic">Plastic</option>
+                <option value="social">Social</option>
+              </select>
+            </label>
+            <label>
+              Logo (facultatif, ex. python)
+              <input id="badge-logo" type="text" value="python" maxlength="40" />
+            </label>
+            <label>
+              Couleur du logo
+              <input id="badge-logo-color" type="text" value="white" maxlength="30" />
+            </label>
+            <label class="badge-link-field">
+              Lien au clic (facultatif)
+              <input id="badge-link" type="url" placeholder="https://exemple.com" />
+            </label>
+          </div>
+          <div class="badge-output">
+            <div class="badge-preview" aria-live="polite">
+              <img id="badge-preview-image" alt="Aperçu du badge personnalisé" />
+              <span id="badge-preview-error" hidden>Impossible de charger l’aperçu. Vérifiez votre connexion.</span>
+            </div>
+            <label for="badge-markdown">Code Markdown</label>
+            <textarea id="badge-markdown" readonly rows="3" aria-label="Code Markdown du badge"></textarea>
+            <button class="button button-primary badge-copy-button" id="badge-copy-button" type="button">Copier le Markdown</button>
+            <button class="badge-reset-button" id="badge-reset-button" type="button" hidden>Créer un nouveau badge</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="badge-gallery-section" aria-labelledby="gallery-title">
+        <div class="badge-section-heading">
+          <div>
+            <p class="eyebrow">GALERIE</p>
+            <h2 id="gallery-title">Badges courants</h2>
+          </div>
+          <label class="badge-search">
+            <span class="sr-only">Rechercher un badge</span>
+            <input id="badge-search" type="search" placeholder="Rechercher un badge…" />
+          </label>
+        </div>
+        <p class="badge-gallery-note">Cette galerie est une sélection et ne contient pas la totalité des badges disponibles ou réalisables. Vous pouvez aussi créer un badge personnalisé avec le générateur ci-dessus. Les badges de langage ou framework sont indicatifs : adaptez les libellés et versions à votre projet. Les badges dépendant d’un dépôt ou d’un paquet utilisent des valeurs d’exemple : remplacez <code>owner/repo</code> ou <code>nom-du-paquet</code> par les vôtres.</p>
+        <div class="badge-categories" id="badge-categories" aria-label="Filtrer par catégorie"></div>
+        <div class="badge-gallery" id="badge-gallery"></div>
+        <p class="badge-empty" id="badge-empty" hidden>Aucun badge ne correspond à cette recherche.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Markdown Editor</span>
+      <span aria-hidden="true">·</span>
+      <a href="./guide.html">Guide Markdown</a>
+      <span aria-hidden="true">·</span>
+      <a href="./licence.html">Licence CC BY-NC 4.0</a>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./src/badges.js"></script>
+  </body>
+</html>
