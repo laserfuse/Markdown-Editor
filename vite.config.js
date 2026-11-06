@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { fileURLToPath } from 'node:url';
 
 export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/Markdown-Editor/' : '/',
+  base: '/',
   build: {
     rollupOptions: {
       input: {
