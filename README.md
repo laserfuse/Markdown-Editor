@@ -1,6 +1,7 @@
 <p align="center">
   <img src="./public/site-logo.png" alt="Markdown Editor" width="360" />
 </p>
+
 ---
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](https://developer.mozilla.org/docs/Web/JavaScript)
