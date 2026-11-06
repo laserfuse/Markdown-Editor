@@ -8,8 +8,6 @@
 [![CSS](https://img.shields.io/badge/CSS-663399?logo=css&logoColor=fff)](https://developer.mozilla.org/docs/Web/CSS)
 [![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=fff)](https://developer.mozilla.org/docs/Web/HTML)
 
-[Ouvrir Markdown Editor](https://markdown-editor.eu/)
-
 Markdown Editor est une application web locale pour rédiger des fichiers Markdown et prévisualiser leur rendu en direct dans un style inspiré de GitHub. Le contenu est traité dans le navigateur : il n’est pas envoyé à un serveur.
 
 Le site est publié sur [markdown-editor.eu](https://markdown-editor.eu/). Vite est configuré avec une base `/` afin que les pages et ressources fonctionnent à la racine du domaine personnalisé. Le workflow GitHub Actions construit le site et publie le dossier `dist/`.
